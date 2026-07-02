@@ -730,16 +730,26 @@ var CONFIG = {
     ov.addEventListener('click', function(e){ if(e.target === ov) ov.classList.remove('open'); });
   });
 
-  // ---------- cupom ----------
+  // ---------- cupom (manual + automático via link ?cupom=CODIGO) ----------
+  function applyCupom(val){
+    if(!val) return;
+    val = val.trim().toUpperCase();
+    if(!val) return;
+    document.getElementById('cupom').value = val;
+    document.getElementById('hidCupom').value = val;
+    document.getElementById('cupomOk').style.display = 'block';
+    if(typeof gtag === 'function') gtag('event','cupom_aplicado',{cupom:val});
+  }
   var btnCupom = document.getElementById('btnCupom');
   if(btnCupom) btnCupom.addEventListener('click', function(){
-    var val = document.getElementById('cupom').value.trim();
-    if(val){
-      document.getElementById('hidCupom').value = val.toUpperCase();
-      document.getElementById('cupomOk').style.display = 'block';
-      if(typeof gtag === 'function') gtag('event','cupom_aplicado',{cupom:val.toUpperCase()});
-    }
+    applyCupom(document.getElementById('cupom').value);
   });
+  // link de campanha rastreado, ex: socialclub.alphagalerie.com/?cupom=REEL01
+  var cupomUrl = new URLSearchParams(window.location.search).get('cupom');
+  if(cupomUrl){
+    if(typeof gtag === 'function') gtag('event','visita_campanha',{cupom:cupomUrl.trim().toUpperCase()});
+    applyCupom(cupomUrl);
+  }
 
   // ---------- envio: FormSubmit (keepalive) + WhatsApp ----------
   function sendForm(form, tipo, btn){
