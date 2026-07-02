@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Social Club — Alphaville · 50% OFF Fundador</title>
+<meta name="description" content="O clube privado de Alphaville. Rooftop, lounge, game room e home office — vaga fundador com 50% OFF por tempo limitado.">
+<meta name="theme-color" content="#0A0A0A">
+
+<!-- Preview do link no WhatsApp / Instagram -->
+<meta property="og:title" content="Alpha Social Club — 50% OFF Fundador">
+<meta property="og:description" content="O clube privado de Alphaville. De R$350 por R$175/mês — vagas limitadas.">
+<meta property="og:url" content="https://socialclub.alphagalerie.com">
+<meta property="og:type" content="website">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MMFT2SMBVS"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-MMFT2SMBVS');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#C9A84C;
+  --gold-soft:#E5CE8F;
+  --black:#0A0A0A;
+  --black-2:#111111;
+  --black-3:#1A1A17;
+  --white:#F5F1E8;
+  --grey:#9A958A;
+  --green:#25D366;
+  --red:#E05C4B;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:'Inter',sans-serif;
+  font-weight:300;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;}
+.container{width:100%;max-width:1080px;margin:0 auto;padding:0 24px;}
+
+/* ============ BARRA DE URGÊNCIA (sticky topo, nunca cobre área clicável) ============ */
+.promo-bar{
+  position:sticky;top:0;z-index:900;
+  background:linear-gradient(90deg,#8f6f1f,var(--gold),#8f6f1f);
+  color:var(--black);
+  text-align:center;
+  padding:9px 16px;
+  font-size:.82rem;
+  font-weight:600;
+  letter-spacing:.04em;
+}
+.promo-bar b{font-weight:700;}
+.promo-bar .cd{font-variant-numeric:tabular-nums;background:rgba(0,0,0,.16);border-radius:5px;padding:1px 7px;margin-left:6px;}
+
+/* ============ NAV ============ */
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 24px;max-width:1080px;margin:0 auto;
+}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;letter-spacing:.12em;color:var(--gold);font-weight:600;}
+.nav-cta{
+  background:var(--gold);color:var(--black);
+  padding:9px 20px;border-radius:100px;
+  font-size:.82rem;font-weight:600;letter-spacing:.03em;
+  transition:transform .15s ease;
+}
+.nav-cta:active{transform:scale(.97);}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:80vh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:44px 24px 60px;
+  position:relative;
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -10%, rgba(201,168,76,.16), transparent 60%),
+    var(--black);
+}
+.hero-eyebrow{
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--grey);margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(2.8rem,9vw,5.2rem);
+  font-weight:600;line-height:1.02;letter-spacing:.02em;
+}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500;}
+.hero-sub{
+  margin:20px auto 8px;max-width:520px;
+  font-size:clamp(1rem,2.6vw,1.2rem);color:var(--grey);font-weight:300;
+}
+.hero-offer{
+  margin:28px 0 6px;
+  display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;justify-content:center;
+}
+.hero-offer .old{
+  font-size:1.15rem;color:var(--grey);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px;
+}
+.hero-offer .new{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,7vw,3.4rem);color:var(--gold);font-weight:700;line-height:1;
+}
+.hero-offer .per{font-size:.95rem;color:var(--grey);}
+.hero-badge{
+  display:inline-block;
+  background:rgba(201,168,76,.14);border:1px solid rgba(201,168,76,.5);
+  color:var(--gold-soft);
+  font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 16px;border-radius:100px;margin-bottom:10px;
+}
+.vagas-line{
+  margin-top:14px;font-size:.86rem;color:var(--gold-soft);font-weight:500;
+}
+.vagas-line .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:7px;animation:pulse 1.6s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.vagas-line .dot{animation:none;}}
+.hero-ctas{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+.btn-gold{
+  background:var(--gold);color:var(--black);
+  padding:16px 34px;border-radius:100px;
+  font-size:.95rem;font-weight:700;letter-spacing:.02em;
+  box-shadow:0 6px 28px rgba(201,168,76,.35);
+  transition:transform .15s ease;
+  display:inline-block;
+}
+.btn-gold:active{transform:scale(.97);}
+.btn-gold:disabled{opacity:.55;}
+.btn-ghost{
+  border:1px solid rgba(245,241,232,.25);color:var(--white);
+  padding:16px 30px;border-radius:100px;
+  font-size:.9rem;font-weight:400;background:transparent;
+  display:inline-block;
+}
+
+/* ============ SEÇÕES ============ */
+section{padding:72px 0;}
+.eyebrow{
+  font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:14px;font-weight:600;
+}
+h2{
+  font-size:clamp(1.9rem,5.5vw,2.8rem);
+  font-weight:600;line-height:1.12;margin-bottom:18px;
+}
+.lead{color:var(--grey);max-width:560px;font-size:1.02rem;}
+.lead b{color:var(--white);font-weight:500;}
+.sec-dark{background:var(--black-2);}
+
+/* ============ DORES ============ */
+.dores-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:14px;margin-top:36px;
+}
+.dor{
+  background:var(--black-3);
+  border:1px solid rgba(224,92,75,.22);
+  border-left:3px solid var(--red);
+  border-radius:14px;padding:20px 18px;
+}
+.dor h3{font-family:'Inter',sans-serif;font-size:.97rem;font-weight:600;margin-bottom:6px;color:var(--white);}
+.dor p{font-size:.86rem;color:var(--grey);}
+.dor .q{font-size:1.3rem;line-height:1;margin-bottom:10px;}
+.dores-bridge{
+  margin-top:32px;text-align:center;
+  background:linear-gradient(180deg,rgba(201,168,76,.12),transparent);
+  border:1px solid rgba(201,168,76,.35);
+  border-radius:16px;padding:26px 22px;
+}
+.dores-bridge p{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,4vw,1.5rem);
+  font-style:italic;color:var(--gold-soft);line-height:1.4;
+}
+
+/* comparação Europa */
+.euro-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px;
+}
+.euro-card{
+  background:var(--black-3);border:1px solid rgba(201,168,76,.18);
+  border-radius:16px;padding:26px 22px;text-align:center;
+}
+.euro-card.highlight{border-color:var(--gold);background:linear-gradient(180deg,rgba(201,168,76,.1),var(--black-3));}
+.euro-card .flag{font-size:1.6rem;}
+.euro-card .place{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:8px 0 12px;}
+.euro-card .price{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--white);font-weight:600;}
+.euro-card.highlight .price{color:var(--gold);}
+.euro-card .price .cut{font-size:1.05rem;color:var(--grey);text-decoration:line-through;margin-right:8px;font-family:'Inter',sans-serif;font-weight:300;}
+.euro-card .note{font-size:.78rem;color:var(--grey);margin-top:6px;}
+.euro-punch{text-align:center;margin-top:22px;color:var(--gold-soft);font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;}
+
+/* benefícios */
+.bene-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:14px;margin-top:36px;
+}
+.bene{
+  background:var(--black-3);border:1px solid rgba(245,241,232,.07);
+  border-radius:14px;padding:20px 18px;
+}
+.bene .ic{font-size:1.4rem;}
+.bene h3{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;margin:10px 0 6px;color:var(--gold-soft);}
+.bene p{font-size:.85rem;color:var(--grey);}
+
+/* palavra do fundador */
+.fundador{
+  max-width:640px;margin:0 auto;text-align:center;
+}
+.fundador blockquote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.3rem,4.5vw,1.8rem);
+  font-style:italic;line-height:1.45;color:var(--white);
+}
+.fundador blockquote span{color:var(--gold);}
+.fundador .who{
+  margin-top:18px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);
+}
+.fundador .who b{color:var(--gold-soft);font-weight:600;}
+
+/* ============ PREÇO ============ */
+.sec-preco{background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(201,168,76,.12),transparent 65%),var(--black-2);}
+.price-card{
+  max-width:520px;margin:36px auto 0;
+  background:var(--black-3);
+  border:1px solid var(--gold);
+  border-radius:22px;
+  padding:36px 28px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.price-card .badge-off{
+  display:inline-block;background:var(--gold);color:var(--black);
+  font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  padding:6px 16px;border-radius:100px;margin-bottom:18px;
+}
+.price-old-line{font-size:1rem;color:var(--grey);}
+.price-old-line s{text-decoration-color:var(--red);text-decoration-thickness:2px;}
+.price-main{
+  font-family:'Cormorant Garamond',serif;
+  font-size:4rem;color:var(--gold);font-weight:700;line-height:1;margin:8px 0 2px;
+}
+.price-main span{font-size:1.3rem;color:var(--grey);font-family:'Inter',sans-serif;font-weight:300;}
+.price-dia{
+  font-size:.88rem;color:var(--gold-soft);font-weight:500;margin-bottom:8px;
+}
+.price-sub{font-size:.85rem;color:var(--grey);margin-bottom:4px;}
+.price-sub b{color:var(--white);font-weight:500;}
+.price-deadline{
+  margin:16px auto 0;max-width:360px;
+  background:rgba(224,92,75,.1);border:1px solid rgba(224,92,75,.4);
+  border-radius:12px;padding:10px 16px;
+  font-size:.82rem;color:#F0A79C;font-weight:500;
+}
+.price-deadline .cd2{font-variant-numeric:tabular-nums;font-weight:700;color:var(--white);}
+.price-checks{list-style:none;text-align:left;margin:24px 0 8px;}
+.price-checks li{
+  font-size:.87rem;color:var(--grey);padding:8px 0;
+  border-bottom:1px solid rgba(245,241,232,.06);
+  display:flex;gap:10px;align-items:flex-start;
+}
+.price-checks li::before{content:"✓";color:var(--gold);font-weight:700;flex-shrink:0;}
+.price-checks li b{color:var(--white);font-weight:500;}
+.garantia{
+  margin:20px 0 4px;
+  background:rgba(37,211,102,.07);border:1px solid rgba(37,211,102,.35);
+  border-radius:12px;padding:14px 18px;text-align:left;
+  font-size:.85rem;color:var(--white);
+}
+.garantia b{color:var(--green);}
+.cupom-row{display:flex;gap:8px;margin:22px 0 6px;}
+.cupom-row input{
+  flex:1;background:var(--black);border:1px solid rgba(245,241,232,.18);
+  border-radius:10px;padding:12px 14px;color:var(--white);
+  font-family:'Inter',sans-serif;font-size:1rem;
+}
+.cupom-row input:focus{outline:none;border-color:var(--gold);}
+.cupom-row button{
+  background:transparent;border:1px solid var(--gold);color:var(--gold);
+  border-radius:10px;padding:0 18px;font-size:.85rem;font-weight:600;
+}
+.cupom-ok{font-size:.8rem;color:var(--green);display:none;margin-bottom:6px;}
+.price-card .btn-gold{width:100%;margin-top:14px;font-size:1.02rem;padding:18px;}
+.btn-wa{
+  display:block;width:100%;margin-top:12px;
+  border:1px solid rgba(37,211,102,.5);color:var(--green);
+  background:transparent;border-radius:100px;padding:15px;
+  font-size:.92rem;font-weight:500;
+}
+.price-foot{font-size:.75rem;color:var(--grey);margin-top:16px;line-height:1.7;}
+.vagas-bar{margin:20px auto 0;max-width:360px;}
+.vagas-bar .track{
+  height:8px;background:rgba(245,241,232,.1);border-radius:100px;overflow:hidden;
+}
+.vagas-bar .fill{
+  height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+  border-radius:100px;width:0;transition:width 1.2s ease;
+}
+.vagas-bar .label{font-size:.8rem;color:var(--gold-soft);margin-top:8px;font-weight:500;}
+
+/* ============ COMO FUNCIONA ============ */
+.steps{display:grid;gap:14px;margin-top:36px;}
+.step{
+  display:flex;gap:18px;align-items:flex-start;
+  background:var(--black-3);border:1px solid rgba(245,241,232,.07);
+  border-radius:14px;padding:20px;
+}
+.step .n{
+  font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold);
+  font-weight:700;line-height:1;flex-shrink:0;width:36px;
+}
+.step h3{font-family:'Inter',sans-serif;font-size:.98rem;font-weight:600;margin-bottom:4px;}
+.step p{font-size:.86rem;color:var(--grey);}
+
+/* ============ FAQ ============ */
+details{
+  background:var(--black-3);border:1px solid rgba(245,241,232,.07);
+  border-radius:12px;margin-bottom:10px;overflow:hidden;
+}
+summary{
+  padding:16px 18px;font-size:.93rem;font-weight:500;cursor:pointer;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";color:var(--gold);font-size:1.3rem;font-weight:400;flex-shrink:0;}
+details[open] summary::after{content:"–";}
+details .a{padding:0 18px 16px;font-size:.87rem;color:var(--grey);}
+
+/* ============ CTA FINAL ============ */
+.sec-final{
+  text-align:center;
+  background:radial-gradient(ellipse 70% 70% at 50% 100%,rgba(201,168,76,.14),transparent 65%),var(--black);
+  padding-bottom:96px;
+}
+.sec-final h2{font-size:clamp(2rem,6vw,3rem);}
+.sec-final .lead{margin:0 auto 10px;}
+
+footer{
+  border-top:1px solid rgba(245,241,232,.08);
+  padding:32px 24px;text-align:center;
+  font-size:.75rem;color:var(--grey);line-height:1.9;
+}
+footer a{color:var(--gold);}
+
+/* ============ MODAL ============ */
+.modal-overlay{
+  display:none;position:fixed;inset:0;z-index:1000;
+  background:rgba(0,0,0,.82);
+  align-items:flex-end;justify-content:center;
+}
+.modal-overlay.open{display:flex;}
+.modal{
+  background:var(--black-2);
+  border:1px solid rgba(201,168,76,.35);
+  border-radius:22px 22px 0 0;
+  width:100%;max-width:480px;
+  padding:28px 24px 32px;
+  max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch;
+}
+@media(min-width:600px){
+  .modal-overlay{align-items:center;}
+  .modal{border-radius:22px;}
+}
+.modal-close{
+  float:right;background:transparent;color:var(--grey);
+  font-size:1.5rem;line-height:1;padding:4px 10px;
+}
+.modal h3{font-size:1.6rem;color:var(--gold);margin-bottom:6px;font-weight:600;}
+.modal .msub{font-size:.86rem;color:var(--grey);margin-bottom:20px;}
+.modal label{display:block;font-size:.78rem;color:var(--grey);margin:14px 0 6px;letter-spacing:.04em;}
+.modal input{
+  width:100%;background:var(--black);border:1px solid rgba(245,241,232,.18);
+  border-radius:10px;padding:14px;color:var(--white);
+  font-family:'Inter',sans-serif;font-size:1rem;
+}
+.modal input:focus{outline:none;border-color:var(--gold);}
+.modal .btn-gold{width:100%;margin-top:22px;padding:16px;font-size:1rem;}
+.modal .mfoot{font-size:.72rem;color:var(--grey);text-align:center;margin-top:14px;line-height:1.7;}
+.modal .promo-recap{
+  background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);
+  border-radius:10px;padding:10px 14px;font-size:.82rem;color:var(--gold-soft);
+  margin-bottom:6px;
+}
+
+@media(max-width:640px){
+  .euro-grid{grid-template-columns:1fr;}
+  section{padding:56px 0;}
+}
+</style>
+</head>
+<body>
+
+<!-- =================== CONFIG RÁPIDA (Leo: edite só aqui) =================== -->
+<script>
+var CONFIG = {
+  // Data-limite da promoção (ano, mês-1, dia, hora). Mês começa em 0: 6 = julho.
+  deadline: new Date(2026, 6, 12, 23, 59, 59),
+  vagasTotal: 20,
+  vagasRestantes: 7,
+  whatsapp: "5511926441522",
+  precoDe: 350,
+  precoPor: 175
+};
+</script>
+
+<!-- BARRA DE URGÊNCIA -->
+<div class="promo-bar">
+  <b>50% OFF FUNDADOR</b> — de R$350 por R$175/mês · termina em<span class="cd" id="cdTop">--</span>
+</div>
+
+<nav>
+  <span class="nav-logo">ALPHA <em style="font-style:italic;">Social Club</em></span>
+  <button class="nav-cta" id="navCta">Garantir vaga</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-eyebrow">Alphaville · Acesso por convite</div>
+  <span class="hero-badge">Turma Fundadora · 50% OFF</span>
+  <h1>ALPHA<br><em>Social Club</em></h1>
+  <p class="hero-sub">O clube privado que Alphaville sempre mereceu. Rooftop, lounge, game room e home office — sem consumação mínima, sem fila.</p>
+
+  <div class="hero-offer">
+    <span class="old">R$350/mês</span>
+    <span class="new">R$175</span>
+    <span class="per">/mês · fundador</span>
+  </div>
+
+  <div class="vagas-line"><span class="dot"></span><span id="vagasHero">--</span> vagas fundador restantes</div>
+
+  <div class="hero-ctas">
+    <button class="btn-gold" id="heroCta">Quero minha vaga fundador →</button>
+    <a class="btn-ghost" href="#como">Como funciona</a>
+  </div>
+</header>
+
+<!-- DORES -->
+<section class="sec-dark">
+  <div class="container">
+    <div class="eyebrow">Se identifica?</div>
+    <h2>Você conhece essa sensação.</h2>
+    <p class="lead">Alphaville tem de tudo — menos um lugar que seja <b>seu</b>.</p>
+
+    <div class="dores-grid">
+      <div class="dor"><div class="q">🏠</div><h3>Em casa não dá</h3><p>Apartamento apertado, família circulando, obra do vizinho. Você não tem um canto de verdade pra respirar, focar ou simplesmente ficar em paz.</p></div>
+      <div class="dor"><div class="q">💻</div><h3>Home office na mesa da cozinha</h3><p>Reunião com barulho de fundo, cadeira que destrói as costas, zero separação entre trabalho e casa. Produtividade vai embora.</p></div>
+      <div class="dor"><div class="q">🍻</div><h3>Receber amigos virou problema</h3><p>Casa não comporta, condomínio reclama do som, e todo encontro vira logística. Aí ninguém marca mais nada.</p></div>
+      <div class="dor"><div class="q">💸</div><h3>Bar toda semana pesa</h3><p>Cada saída é consumação mínima, couvert, estacionamento. No fim do mês, você gastou mais que uma mensalidade — sem ter um lugar fixo seu.</p></div>
+      <div class="dor"><div class="q">🧊</div><h3>Coworking sem alma</h3><p>Mesa fria, gente estranha, horário comercial. Serve pra trabalhar — não pra viver. Às 18h você está na rua de novo.</p></div>
+      <div class="dor"><div class="q">👥</div><h3>Círculo social parado</h3><p>Você mora aqui há anos e conhece meia dúzia de pessoas. Falta um ponto de encontro onde conhecer gente do seu nível, naturalmente.</p></div>
+    </div>
+
+    <div class="dores-bridge">
+      <p>Se você se viu em pelo menos uma dessas, o Alpha Social Club foi criado exatamente pra você.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ORIGEM + ANCORAGEM DE PREÇO -->
+<section>
+  <div class="container">
+    <div class="eyebrow">Origem do conceito</div>
+    <h2>Barcelona. Amsterdam. Agora, Alphaville.</h2>
+    <p class="lead">O conceito de social club privado existe na Europa há décadas: um espaço members-only de conexão, cultura e comunidade — sem precisar comprar nada para estar lá.</p>
+
+    <div class="euro-grid">
+      <div class="euro-card">
+        <div class="flag">🇪🇺</div>
+        <div class="place">Europa · Barcelona / Amsterdam</div>
+        <div class="price">€30–50<span style="font-size:1rem;color:var(--grey);">/mês</span></div>
+        <div class="note">≈ R$185 a R$310 por mês</div>
+      </div>
+      <div class="euro-card highlight">
+        <div class="flag">🇧🇷</div>
+        <div class="place">Alpha Social Club · Fundador</div>
+        <div class="price"><span class="cut">R$350</span>R$175<span style="font-size:1rem;color:var(--grey);">/mês</span></div>
+        <div class="note">50% OFF por tempo limitado</div>
+      </div>
+    </div>
+    <p class="euro-punch">O mesmo conceito. Em Alphaville. Pela metade do preço — só para a turma fundadora.</p>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="sec-dark">
+  <div class="container">
+    <div class="eyebrow">Tudo que você acessa</div>
+    <h2>O que muda quando você faz parte.</h2>
+    <div class="bene-grid">
+      <div class="bene"><div class="ic">🌇</div><h3>Rooftop Exclusivo</h3><p>Vista pra Alphaville, área aberta e coberta — relaxar, trabalhar ou receber amigos quando quiser.</p></div>
+      <div class="bene"><div class="ic">🛋️</div><h3>Lounge Privê</h3><p>Painel de LED imersivo, climatizado, iluminação ambiente. O lugar ideal pra desacelerar.</p></div>
+      <div class="bene"><div class="ic">🎮</div><h3>Game Room</h3><p>PlayStation 5, jogos e entretenimento. Pausa o mundo lá fora e recarrega aqui dentro.</p></div>
+      <div class="bene"><div class="ic">💻</div><h3>Home Office</h3><p>Wi-fi de alta velocidade, ambiente tranquilo. Trabalhe com foco quando precisar.</p></div>
+      <div class="bene"><div class="ic">🤝</div><h3>Networking Real</h3><p>Empreendedores, criativos e profissionais de Alphaville no mesmo círculo seleto.</p></div>
+      <div class="bene"><div class="ic">☕</div><h3>Cafés & Drinks</h3><p>Cafés especiais, energéticos e snacks. Consumo à parte, sempre disponível.</p></div>
+      <div class="bene"><div class="ic">🎁</div><h3>Showroom Exclusivo</h3><p>Acesso ao showroom curado da Alpha Galerie. Produtos selecionados só pra membros.</p></div>
+      <div class="bene"><div class="ic">🐾</div><h3>Pet Friendly</h3><p>Seu pet é bem-vindo. Um clube que cabe na sua vida de verdade.</p></div>
+      <div class="bene"><div class="ic">🔒</div><h3>Ambiente Seguro</h3><p>Acesso controlado, seletivo e discreto. Você sabe quem está ao seu lado.</p></div>
+      <div class="bene"><div class="ic">🕐</div><h3>Horário Diferenciado</h3><p>Membros têm horários exclusivos e acesso estendido.</p></div>
+      <div class="bene"><div class="ic">🎂</div><h3>Eventos Privados</h3><p>Aniversários, encontros e eventos com prioridade para membros.</p></div>
+      <div class="bene"><div class="ic">⭐</div><h3>Prioridade em Lançamentos</h3><p>Novidades e produtos chegam pra você antes de todo mundo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PALAVRA DO FUNDADOR -->
+<section>
+  <div class="container fundador">
+    <div class="eyebrow" style="text-align:center;">Palavra do fundador</div>
+    <blockquote>"Eu criei o Alpha pra ser o lugar que <span>eu mesmo procurava</span> em Alphaville e nunca encontrei. Um espaço pra trabalhar, receber, desacelerar — sem precisar dar satisfação pra ninguém."</blockquote>
+    <div class="who"><b>Leo</b> · Fundador · Alpha Galerie desde 2014</div>
+  </div>
+</section>
+
+<!-- PREÇO -->
+<section class="sec-preco" id="preco">
+  <div class="container">
+    <div class="eyebrow" style="text-align:center;">Sua vaga</div>
+    <h2 style="text-align:center;">Entre para a turma fundadora.</h2>
+
+    <div class="price-card">
+      <span class="badge-off">50% OFF · Fundador</span>
+      <div class="price-old-line">De <s>R$350/mês</s> por</div>
+      <div class="price-main">R$175<span>/mês</span></div>
+      <div class="price-dia">Menos de R$6 por dia — pelo seu espaço em Alphaville.</div>
+      <div class="price-sub"><b>Cobrado mensalmente</b> · contrato de 3 meses · parcele em até <b>12x no Mercado Pago</b></div>
+      <div class="price-sub">Total do trimestre: R$525 · renovação automática a cada 90 dias</div>
+
+      <div class="price-deadline">⏳ O preço fundador termina em <span class="cd2" id="cdPreco">--</span>. Depois, volta pra R$350/mês.</div>
+
+      <div class="vagas-bar">
+        <div class="track"><div class="fill" id="vagasFill"></div></div>
+        <div class="label"><span id="vagasPreco">--</span> de <span id="vagasTotal">--</span> vagas fundador ainda disponíveis</div>
+      </div>
+
+      <ul class="price-checks">
+        <li><b>Preço fundador travado:</b> quem entra agora renova sempre a R$175/mês, mesmo quando o preço subir</li>
+        <li>Acesso ilimitado durante todo o período contratado</li>
+        <li>Cancelamento simples: é só avisar antes da próxima renovação</li>
+      </ul>
+
+      <div class="garantia">
+        <b>✓ Primeira visita garantida:</b> agende sua primeira visita antes de pagar. Você conhece o espaço, sente o clima — e só confirma a assinatura se fizer sentido pra você.
+      </div>
+
+      <div class="cupom-row">
+        <input type="text" id="cupom" placeholder="Tem um cupom de indicação?" autocomplete="off">
+        <button type="button" id="btnCupom">Aplicar</button>
+      </div>
+      <div class="cupom-ok" id="cupomOk">✓ Cupom aplicado! Informe no WhatsApp na hora de fechar.</div>
+
+      <button class="btn-gold" id="precoCta">Garantir minha vaga fundador →</button>
+      <button class="btn-wa" id="btnFalar">💬 Agendar visita antes de assinar</button>
+
+      <div class="price-foot">
+        Pagamento processado pelo Mercado Pago com segurança.<br>
+        Endereço completo compartilhado após aprovação.<br>
+        ⚡ Acesso mediante aprovação — ambiente seletivo.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="sec-dark" id="como">
+  <div class="container">
+    <div class="eyebrow">Processo</div>
+    <h2>Como funciona a entrada</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3>Deixe seu contato</h3><p>Clique em "Garantir minha vaga": nome, WhatsApp e Instagram. Leva 30 segundos.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>Agende sua visita (opcional)</h3><p>Quer conhecer antes? A equipe agenda sua primeira visita sem compromisso.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Finalize o pagamento</h3><p>Link do Mercado Pago direto no seu WhatsApp. Parcele em até 12x.</p></div></div>
+      <div class="step"><div class="n">4</div><div><h3>Receba o endereço e use quando quiser</h3><p>Acesso ilimitado durante o trimestre. Renova automático — cancele antes da próxima renovação se quiser.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ / OBJEÇÕES -->
+<section>
+  <div class="container">
+    <div class="eyebrow">Dúvidas diretas</div>
+    <h2>Antes de você perguntar.</h2>
+    <details>
+      <summary>Por que 3 meses de contrato?</summary>
+      <div class="a">Clube é comunidade — e comunidade precisa de constância. O trimestre garante que quem está dentro realmente faz parte, e é isso que mantém o ambiente seleto. Você pode parcelar o valor em até 12x.</div>
+    </details>
+    <details>
+      <summary>E se eu não gostar do espaço?</summary>
+      <div class="a">Por isso a primeira visita vem antes do pagamento. Você conhece tudo, sente o clima, e só assina se fizer sentido. Ninguém paga no escuro.</div>
+    </details>
+    <details>
+      <summary>O preço fundador sobe depois?</summary>
+      <div class="a">Sim. O valor cheio é R$350/mês. Quem entra na turma fundadora trava R$175/mês nas renovações — enquanto mantiver a assinatura ativa.</div>
+    </details>
+    <details>
+      <summary>Onde fica exatamente?</summary>
+      <div class="a">Em Alphaville, num endereço discreto e sem fachada — de propósito. O endereço completo é compartilhado após a aprovação, pra manter o ambiente privado de verdade.</div>
+    </details>
+    <details>
+      <summary>Preciso consumir pra ficar?</summary>
+      <div class="a">Não. A mensalidade dá acesso ao espaço sem consumação mínima. Cafés, drinks e snacks ficam disponíveis à parte, se você quiser.</div>
+    </details>
+    <details>
+      <summary>Posso levar um convidado?</summary>
+      <div class="a">Membros têm condições especiais para convidados — os detalhes são combinados direto com a equipe no WhatsApp.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="sec-final">
+  <div class="container">
+    <div class="eyebrow">Última chamada</div>
+    <h2>Alphaville merece um clube à altura.<br><em style="color:var(--gold);font-style:italic;">E você merece o preço fundador.</em></h2>
+    <p class="lead" style="margin:14px auto 6px;">R$175/mês em vez de R$350 — só até o fim do prazo, só enquanto houver vaga.</p>
+    <div class="vagas-line" style="margin-bottom:24px;"><span class="dot"></span><span id="vagasFinal">--</span> vagas restantes · termina em <span class="cd2" id="cdFinal">--</span></div>
+    <button class="btn-gold" id="finalCta">Entrar para o clube →</button>
+  </div>
+</section>
+
+<footer>
+  © 2026 Alpha Social Club · Alphaville, Barueri/SP<br>
+  Espaço privado — acesso exclusivo para membros aprovados.<br>
+  <a href="https://socialclub.alphagalerie.com">socialclub.alphagalerie.com</a>
+</footer>
+
+<!-- MODAL: GARANTIR VAGA -->
+<div class="modal-overlay" id="ovVaga">
+  <div class="modal">
+    <button class="modal-close" data-close="ovVaga">×</button>
+    <h3>Quase lá.</h3>
+    <div class="promo-recap">🔒 Vaga fundador: <b>R$175/mês</b> (50% OFF) — preço travado nas renovações.</div>
+    <p class="msub">Deixe seu contato e garantimos sua vaga.</p>
+    <form id="formVaga">
+      <label>Seu nome</label>
+      <input type="text" name="nome" required autocomplete="name">
+      <label>WhatsApp</label>
+      <input type="tel" name="whatsapp" required inputmode="tel" placeholder="(11) 9...">
+      <label>Instagram (opcional)</label>
+      <input type="text" name="instagram" placeholder="@">
+      <input type="hidden" name="cupom" id="hidCupom" value="">
+      <input type="hidden" name="origem" value="socialclub-promo50">
+      <button type="submit" class="btn-gold">Confirmar e garantir vaga →</button>
+    </form>
+    <div class="mfoot">Seus dados não são compartilhados com terceiros.<br>A equipe entra em contato via WhatsApp.</div>
+  </div>
+</div>
+
+<!-- MODAL: FALAR / VISITA -->
+<div class="modal-overlay" id="ovFalar">
+  <div class="modal">
+    <button class="modal-close" data-close="ovFalar">×</button>
+    <h3>Agende sua visita.</h3>
+    <p class="msub">Deixe seu contato — a equipe marca sua primeira visita, sem compromisso.</p>
+    <form id="formFalar">
+      <label>Seu nome</label>
+      <input type="text" name="nome" required autocomplete="name">
+      <label>WhatsApp</label>
+      <input type="tel" name="whatsapp" required inputmode="tel" placeholder="(11) 9...">
+      <label>Instagram (opcional)</label>
+      <input type="text" name="instagram" placeholder="@">
+      <input type="hidden" name="origem" value="socialclub-visita">
+      <button type="submit" class="btn-gold">Enviar e abrir WhatsApp →</button>
+    </form>
+    <div class="mfoot">Você será redirecionado para o nosso WhatsApp.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ---------- vagas ----------
+  var v = CONFIG.vagasRestantes, t = CONFIG.vagasTotal;
+  ['vagasHero','vagasPreco','vagasFinal'].forEach(function(id){
+    var el = document.getElementById(id); if(el) el.textContent = v;
+  });
+  var tot = document.getElementById('vagasTotal'); if(tot) tot.textContent = t;
+  var fill = document.getElementById('vagasFill');
+  if(fill){ setTimeout(function(){ fill.style.width = Math.round(((t - v) / t) * 100) + '%'; }, 400); }
+
+  // ---------- countdown ----------
+  function fmt(ms){
+    if(ms <= 0) return 'encerrado';
+    var d = Math.floor(ms / 86400000);
+    var h = Math.floor(ms % 86400000 / 3600000);
+    var m = Math.floor(ms % 3600000 / 60000);
+    var s = Math.floor(ms % 60000 / 1000);
+    if(d > 0) return d + 'd ' + h + 'h ' + m + 'min';
+    return ('0'+h).slice(-2) + ':' + ('0'+m).slice(-2) + ':' + ('0'+s).slice(-2);
+  }
+  function tick(){
+    var ms = CONFIG.deadline - new Date();
+    ['cdTop','cdPreco','cdFinal'].forEach(function(id){
+      var el = document.getElementById(id); if(el) el.textContent = fmt(ms);
+    });
+  }
+  tick(); setInterval(tick, 1000);
+
+  // ---------- modais ----------
+  function openM(id){ document.getElementById(id).classList.add('open'); }
+  function closeM(id){ document.getElementById(id).classList.remove('open'); }
+
+  ['navCta','heroCta','precoCta','finalCta'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener('click', function(){
+      openM('ovVaga');
+      if(typeof gtag === 'function') gtag('event','abrir_modal_vaga');
+    });
+  });
+  var bf = document.getElementById('btnFalar');
+  if(bf) bf.addEventListener('click', function(){ openM('ovFalar'); });
+
+  document.querySelectorAll('.modal-close').forEach(function(btn){
+    btn.addEventListener('click', function(){ closeM(btn.getAttribute('data-close')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function(ov){
+    ov.addEventListener('click', function(e){ if(e.target === ov) ov.classList.remove('open'); });
+  });
+
+  // ---------- cupom ----------
+  var btnCupom = document.getElementById('btnCupom');
+  if(btnCupom) btnCupom.addEventListener('click', function(){
+    var val = document.getElementById('cupom').value.trim();
+    if(val){
+      document.getElementById('hidCupom').value = val.toUpperCase();
+      document.getElementById('cupomOk').style.display = 'block';
+      if(typeof gtag === 'function') gtag('event','cupom_aplicado',{cupom:val.toUpperCase()});
+    }
+  });
+
+  // ---------- envio: FormSubmit (keepalive) + WhatsApp ----------
+  function sendForm(form, tipo, btn){
+    if(btn){ btn.disabled = true; btn.textContent = 'Enviando...'; }
+    var data = new FormData(form);
+    var payload = {};
+    data.forEach(function(val, key){ payload[key] = val; });
+    payload._subject = 'Social Club - ' + tipo + ': ' + (payload.nome || '');
+    payload._template = 'table';
+    payload._captcha = 'false';
+
+    // keepalive garante que o envio completa mesmo com o redirect pro WhatsApp
+    try{
+      fetch('https://formsubmit.co/ajax/alphagalerie@gmail.com', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json','Accept':'application/json'},
+        body: JSON.stringify(payload),
+        keepalive: true
+      });
+    }catch(e){}
+
+    var msg;
+    if(tipo === 'VAGA FUNDADOR'){
+      msg = 'Oi! Quero garantir minha vaga FUNDADOR no Alpha Social Club (R$175/mes - 50%25 OFF).%0A%0ANome: ' + encodeURIComponent(payload.nome || '') +
+            (payload.cupom ? '%0ACupom: ' + encodeURIComponent(payload.cupom) : '') +
+            '%0AInstagram: ' + encodeURIComponent(payload.instagram || '-');
+    } else {
+      msg = 'Oi! Quero agendar uma visita ao Alpha Social Club antes de assinar.%0A%0ANome: ' + encodeURIComponent(payload.nome || '') +
+            '%0AInstagram: ' + encodeURIComponent(payload.instagram || '-');
+    }
+    if(typeof gtag === 'function') gtag('event','lead_' + (tipo === 'VAGA FUNDADOR' ? 'vaga' : 'visita'));
+
+    setTimeout(function(){
+      window.location.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + msg;
+    }, 350);
+  }
+
+  var fv = document.getElementById('formVaga');
+  if(fv) fv.addEventListener('submit', function(e){
+    e.preventDefault();
+    sendForm(fv, 'VAGA FUNDADOR', fv.querySelector('button[type="submit"]'));
+  });
+  var ff = document.getElementById('formFalar');
+  if(ff) ff.addEventListener('submit', function(e){
+    e.preventDefault();
+    sendForm(ff, 'VISITA', ff.querySelector('button[type="submit"]'));
+  });
+})();
+</script>
+</body>
+</html>
